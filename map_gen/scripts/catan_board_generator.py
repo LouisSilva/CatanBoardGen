@@ -1,6 +1,6 @@
 import random
 import sys
-from typing import Dict, Union, Optional
+from typing import Union, Optional
 
 from ..models import CatanBoard
 
@@ -59,5 +59,5 @@ def create_board(seed: Optional[Union[str, int]] = None):
     for i in range(len(tiles)):
         return_array.append([tiles[i], numbers[i], pips[i]])
 
-    return return_array
+    return return_array, seed
 

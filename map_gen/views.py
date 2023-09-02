@@ -25,9 +25,9 @@ tile_sizes = [
         ]
 
 def map_generator(request):
-    generated_board = create_board()
+    generated_board, seed = create_board()
     for i in range(len(generated_board)):
         generated_board[i].append(tile_sizes[i])
 
-    context = {"tile_data": generated_board}
-    return render(request, "map_gen/map_generator2.html", context)
+    context = {"tile_data": generated_board, "seed": seed}
+    return render(request, "map_gen/map_generator.html", context)
