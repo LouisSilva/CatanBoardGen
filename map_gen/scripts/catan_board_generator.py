@@ -59,3 +59,5 @@ def create_board(seed: Optional[Union[str, int]] = None):
     for i in range(len(tiles)):
         return_array.append([tiles[i], numbers[i], pips[i]])
 
+    return return_array
+
