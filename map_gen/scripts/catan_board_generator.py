@@ -2,7 +2,6 @@ import random
 import sys
 from typing import Union, Optional
 
-from ..models import CatanBoard
 
 def create_board(seed: Optional[Union[str, int]] = None):
     """Creates a fully random board"""
